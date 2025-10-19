@@ -262,7 +262,13 @@
     "rutaku_team": "Rutaku Team",
     "search": "Search",
     "search_help_articles": "Search Help Articles",
-    "search_results_for": "Search Results for \\\"{query}\\\"",
+    "search_results_for": "Search Results for \"{query}\"",
     "try_different_keywords": "Try searching with different keywords or browse our categories.",
-    "was_this_article_helpful": "Was this article helpful?"
+    "was_this_article_helpful": "Was this article helpful?",
+    "Search for articles...": "Makale arayın...",
+    "theme": "Theme",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "toggle_theme": "Toggle theme"
 }

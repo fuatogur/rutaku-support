@@ -41,22 +41,14 @@ export function MainLayout({ children }: Props) {
                             </div>
                         </Link>
 
-                        <nav className="flex items-center space-x-4">
-                            <Link
-                                href={route('home')}
-                                className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
-                            >
-                                <Home className="h-4 w-4" />
-                                <span>{t('home')}</span>
-                            </Link>
-
+                        <nav className="flex items-center space-x-1">
                             <div className="relative" ref={langDropdownRef}>
                                 <button
                                     onClick={() => setLangDropdownOpen(!isLangDropdownOpen)}
-                                    className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
+                                    className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 px-3 py-2 rounded-md"
                                 >
                                     <Globe className="h-4 w-4" />
-                                    <span>{locale}</span>
+                                    <span>{locales[locale].native}</span>
                                 </button>
                                 {isLangDropdownOpen && (
                                     <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 z-50">

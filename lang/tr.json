@@ -264,5 +264,11 @@
     "search_help_articles": "Yardım Makalelerini Ara",
     "search_results_for": "\"{query}\" için Arama Sonuçları",
     "try_different_keywords": "Farklı anahtar kelimelerle aramayı deneyin veya kategorilerimize göz atın.",
-    "was_this_article_helpful": "Bu makale yardımcı oldu mu?"
+    "was_this_article_helpful": "Bu makale yardımcı oldu mu?",
+    "Search for articles...": "Makale arayın...",
+    "theme": "Tema",
+    "system": "Sistem",
+    "light": "Açık",
+    "dark": "Koyu",
+    "toggle_theme": "Temayı değiştir"
 }

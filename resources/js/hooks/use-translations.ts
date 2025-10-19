@@ -1,7 +1,16 @@
 import { usePage } from '@inertiajs/react';
 
+interface PageProps {
+    locale: string
+    translations: {
+        [key: string]: {
+            [key: string]: string
+        }
+    }
+}
+
 function useTranslation() {
-    const {locale, translations} = usePage().props;
+    const {locale, translations} = usePage<PageProps>().props;
 
     // @ts-ignore
     function t(key, params: null | object = null) {
@@ -23,11 +32,11 @@ function useTranslation() {
             return translation;
         }
 
-        return translations[locale][key] || translations['en'][key] || key;
+        return translations[locale]?.[key] || translations.en?.[key] || key;
     }
 
     return { t };
-};
+}
 
 const useTranslations = useTranslation
 
